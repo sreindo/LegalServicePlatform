@@ -1,0 +1,51 @@
+{
+  "pages":[
+    "pages/index/index",
+    "components/searchInput/SearchInput",
+    "pages/lawQA/index",
+    "pages/im/room/room",
+    "pages/search/index",
+    "pages/cate_poverty/index",
+    "pages/cate_dispute/index",
+    "pages/cate_land/index",
+    "pages/cate_agriculture/index",
+    "pages/cate_autonomy/index",
+    "pages/user/index",
+    "pages/user/collections/index",
+    "pages/user/about/index",
+    "pages/login/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#4db34d",
+    "navigationBarTitleText": "“法润乡土”服务平台",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#000000",
+    "list": [
+    {
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "icons/index.png",
+      "selectedIconPath": "icons/index_selected.png"
+    },
+    {
+      "pagePath": "pages/im/room/room",
+      "text": "咨询",
+      "iconPath": "icons/menu.png",
+      "selectedIconPath": "icons/menu_selected.png"
+    },
+    {
+      "pagePath": "pages/user/index",
+      "text": "我的",
+      "iconPath": "icons/my.png",
+      "selectedIconPath": "icons/my_selected.png"
+    }
+   ]
+  },
+  
+  "sitemapLocation": "sitemap.json"
+}

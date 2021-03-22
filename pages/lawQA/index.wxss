@@ -1,0 +1,55 @@
+/* pages/lawQA/index.wxss */
+
+
+.wrapper {
+  margin: 10rpx 50rpx;
+}
+.head {
+  padding: 10rpx;
+}
+.question {
+  font-size: x-large;
+}
+.sub-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20rpx 0;
+  border-bottom: 1rpx solid black;
+  font-size: 14px;
+}
+
+.sub-title .date {
+  color: rgb(88, 88, 88);
+}
+
+.page-views {
+  color: rgb(88, 88, 88);
+}
+.collect {
+  display: flex;
+  align-items: center;
+}
+
+.collect text {
+  margin: 0 20rpx;
+  color: rgb(88, 88, 88);
+}
+
+.collect .collect-icon {
+  width: 50rpx;
+  height: 50rpx;
+}
+.container {
+  margin: 50rpx 0;
+  padding: 0;
+}
+
+.container .answer {
+  font-size: 18px;
+  font-weight: 300;
+  text-indent: 2em;
+  padding: 0;
+  line-height: 2em;
+}

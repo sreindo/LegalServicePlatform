@@ -1,0 +1,31 @@
+<!--pages/lawQA/index.wxml-->
+<view class="wrapper">
+  <!-- 问题标题 -->
+  <view class="head">
+    <view class="question">
+      {{lawQA.lawQuestion}}
+    </view>
+  </view>
+  <view class="sub-title">
+    <!-- 日期 -->
+    <view class="date">日期：{{lawQA.date}}</view>
+    <!-- 浏览量 -->
+    <view class="page-views">
+      浏览量：{{lawQA.pageViews}}
+    </view>
+    <!-- 收藏按钮 -->
+    <view class="collect">
+      <text>收藏</text>
+      <!-- 根据收藏情况切换icon -->
+      <image class="collect-icon" wx:if="{{lawQA.isCollected}}" src=' ../../icons/icon-collected.png'
+        bindtap="onCollect"></image>
+      <image class="collect-icon" wx:else src=' ../../icons/icon-collect.png' bindtap="onCollect"></image>
+    </view>
+
+  </view>
+  <view class="container">
+    <view class="answer">
+      {{lawQA.lawAnswer}}
+    </view>
+  </view>
+</view>

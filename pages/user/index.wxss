@@ -1,0 +1,136 @@
+/* pages/my/my.wxss */
+.weui-cell__hd image {
+  width: 50rpx;
+  height: 50rpx;
+  vertical-align: middle;
+}
+.head {
+  height: 222rpx;
+  box-sizing: border-box;
+  padding: 0 30rpx;
+  border: none;
+}
+.head_container {
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  padding: 14rpx 22rpx;
+  box-sizing: border-box;
+  border-radius: 0 0 10rpx 10rpx;
+}
+.userimage {
+  display: block;
+  width: 146rpx;
+  height: 146rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  float: left;
+  vertical-align: middle;
+}
+.username {
+  float: left;
+  color:black;
+  margin-left: 50rpx;
+  margin-top: 25rpx;
+}
+.stu_id {
+  color:black;
+}
+.weui-cells:before,.weui-cells:after {
+  height: 0;
+  width: 0;
+}
+.text {
+  padding-left: 18rpx;
+}
+.weui-cell {
+  padding: 24rpx 30rpx;
+  color: #2e2e2e;
+  font-size: 0.8rem;
+}
+
+
+
+
+.parent{
+    
+    height: 250rpx;
+    padding: 0 20rpx;
+ }
+ .top{
+   display: flex;
+ }
+ .name{
+   color: #030303;
+   padding-top:20rpx;
+   font-size:16px;
+ }
+ .head{
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding-top: 40rpx;
+ }
+ .head image{
+   width:160rpx;
+   height:160rpx;
+   border-radius:80rpx;
+ }
+ .money{
+   width: 40%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding-top: 40rpx;
+ }
+ .money view{
+   font-size: 16px;
+   padding-bottom: 30rpx;
+ }
+ .btn{
+   background: #ff43da;
+   padding: 16rpx 40rpx;
+   border-radius: 10rpx;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 14px;
+ }
+ .orders{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   background: #FFF;
+   padding: 26rpx 40rpx; 
+   margin-top: 40rpx;
+   border-radius: 10rpx;
+ }
+ .list{
+   text-align: center;
+ }
+ .list view{
+   font-size: 16px;
+ }
+ .lists{
+   padding: 0 50rpx;
+ }
+ .list-wap{
+   display:flex;
+   justify-content:space-between;
+   padding-top:60rpx;
+   border-bottom:1px solid #EEE;
+   padding-bottom:30rpx;
+ }
+ .left{
+   display: flex;
+   align-items: center;
+ }
+ .left image{
+   width: 50rpx;
+   height: 50rpx;
+ }
+ .left text{
+   font-size: 16px;
+   padding-left: 10rpx;
+ }

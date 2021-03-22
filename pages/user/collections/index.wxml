@@ -1,0 +1,22 @@
+<!--pages/user/collections/index.wxml-->
+<view class="wrapper">
+
+  <!-- 当收藏夹有东西时 -->
+  <block wx:if="{{lists}}">
+    <view class="lists"  wx:for="{{lists}}" wx:key="lawID">
+      <view class="law_QA" bindtap="toDetail">
+        <view class="law_question">
+          {{item.lawQuestion}}
+        </view>
+        <view class="law_answer">
+          {{item.lawAnswer}}
+        </view>
+      </view>
+    </view>
+  </block>
+  
+  <!-- 当收藏夹内没东西时 -->
+  <view class="empty_list" wx:if="{{!lists.length}}" >
+    ——————你的收藏夹空空如也——————
+  </view>
+</view>

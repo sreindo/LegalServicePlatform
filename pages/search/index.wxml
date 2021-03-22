@@ -1,0 +1,49 @@
+<!--pages/search/index.wxml-->
+<view class="wrapper">
+
+  <!-- 搜索栏 -->
+  <view class="search_row">
+    <input value="{{inpValue}}" type="text" placeholder="请输入想咨询的法律问题" bindinput="handleInput"></input>
+    <button class="btn-cancel" hidden="{{!isFocus}}" bindtap="handleCancel">取消</button>
+  </view>
+
+  <!-- 语音输入 -->
+  <!-- 
+    bindtouchstart="touchStart" bindtouchend="touchEnd" 
+    方法可以实现长按按钮功能 -->
+  <view class="voiceRecording" bindtouchstart="touchStart" bindtouchend="touchEnd">
+    <image class="voice-icon" src="../../icons/voice.png"></image>
+    <text>按住说话</text>
+  </view>
+
+  <!-- 搜索结果 -->
+  <view class="search_content">
+    <!-- <navigator url="/pages/lawQA/index?law_id={{item.law_id}}" class="search_item" wx:for="{{lawQA}}" wx:key="law_id">
+      {{lawQA.question}}
+    </navigator> -->
+
+    <view class="search_lists" wx:for="{{lawQA}}" wx:key="item.law_id">
+      <view class="search_item" bindtap="toDetail">
+        <!-- 具体尚未实现 -->
+        {{item.question}}
+      </view>
+    </view>
+
+    <view class="law_QA">
+      <view class="law_question">
+        1.法律问答法律问答法律问答法律问答?
+      </view>
+      <view class="law_answer">
+        答：法律问答法律问答法律问答法律问答。
+      </view>
+    </view>
+    <view class="law_QA">
+      <view class="law_question">
+        2.法律问答法律问答法律问答法律问答?
+      </view>
+      <view class="law_answer">
+        答：法律问答法律问答法律问答法律问答。
+      </view>
+    </view>
+  </view>
+</view>

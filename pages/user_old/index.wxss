@@ -1,0 +1,79 @@
+/* pages/user/index.wxss */
+page{
+  background-color: #f3f3f3;
+}
+.user_info_wrap {
+  height: 30vh;
+  background-color: var(--themeColor);
+  position: relative;
+}
+.user_img_wrap{
+  height: 30vh;
+  position: relative;
+}
+.user_background{
+  height: 30vh;
+  filter: blur(20rpx);
+}
+.user_info {
+  position: absolute;
+  /* 偏移父元素的50% */
+  left: 50%;
+  /* 偏移自身元素的50% */
+  transform: translateX(-50%);
+  top: 30%;
+  text-align: center;
+
+}
+.user_icon{
+  width: 120rpx;
+  height: 120rpx;
+  /* transform: scale(0.25); */
+  border-radius: 50%;
+}
+.user_name{
+  color: rgb(255, 255, 255);
+  margin-top: 20rpx;
+  font-size: 30rpx;
+}
+.user_btn{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 20%;
+  border: 1rpx solid greenyellow;
+  color: greenyellow;
+  font-size: 38rpx;
+  padding: 30rpx;
+  border-radius: 10rpx;
+}
+
+.about{
+  border-radius: 20rpx;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+  padding-left: 50rpx;
+  padding-right: 50rpx;
+}
+.logo{
+  height: 100rpx;
+}
+
+#aboutjd5{
+  border-bottom: none;
+}
+.about .l-menu-list .l-menu-item{
+  display: block;
+  line-height: 100rpx;
+  font-size: 35rpx;
+  border-bottom: 1rpx solid #ddd;
+}
+#qj{
+  font-size: 30rpx;
+  color: #ccc;
+  float: right;
+}
+.iconfont{
+  padding-right: 30rpx;
+  font-size: 45rpx;
+  color: rgb(4, 110, 248);
+}

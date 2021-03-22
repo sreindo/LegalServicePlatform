@@ -1,0 +1,60 @@
+<!--pages/user/user.wxml-->
+
+<view>
+  <view class='parent'>
+    <view class="weui-cells head">
+    <view class="head_container">
+          <open-data type="userAvatarUrl" class="userimage" lang="en"></open-data>
+        <view class="weui-cell__bd username">
+          <open-data type="userNickName" ></open-data>
+          <view class="stu_id">微信用户</view>
+        </view>
+    </view>
+    </view>
+  </view>
+  <view class='lists'>
+    <view class='list-wap' bindtap='toCollect'>
+      <view class='left'>
+        <image src='https://6f6e-onlineshop-30u8p-1304317240.tcb.qcloud.la/img/collect.png'></image>
+        <text>我的收藏</text>
+      </view>
+      <view class='right'>
+        <image style='width:30rpx;height:30rpx;' src='https://6f6e-onlineshop-30u8p-1304317240.tcb.qcloud.la/img/dv.png'></image>
+      </view>
+    </view>
+
+    <!-- 还未设置最近浏览 -->
+    <view class='list-wap' bindtap=''>
+      <view class='left'>
+        <image src='https://6f6e-onlineshop-30u8p-1304317240.tcb.qcloud.la/img/order.png'></image>
+        <text>最近浏览</text>
+      </view>
+      <view class='right'>
+        <image style='width:30rpx;height:30rpx;' src='https://6f6e-onlineshop-30u8p-1304317240.tcb.qcloud.la/img/dv.png'></image>
+      </view>
+    </view>
+    
+    <!-- 用户的提问记录？如何做 -->
+     <view class='list-wap' bindtap=''>
+      <view class='left'>
+        <image src='https://6f6e-onlineshop-30u8p-1304317240.tcb.qcloud.la/img/pay.png'></image>
+        <text>我的提问</text>
+      </view>
+      <view class='right'>
+        <image style='width:30rpx;height:30rpx;' src='https://6f6e-onlineshop-30u8p-1304317240.tcb.qcloud.la/img/dv.png'></image>
+      </view>
+    </view>
+  
+    
+    
+    <view class='list-wap' bindtap='toAbout'>
+      <view class='left'>
+        <image src='https://6f6e-onlineshop-30u8p-1304317240.tcb.qcloud.la/img/pay.png'></image>
+        <text>关于</text>
+      </view>
+      <view class='right'>
+        <image style='width:30rpx;height:30rpx;' src='https://6f6e-onlineshop-30u8p-1304317240.tcb.qcloud.la/img/dv.png'></image>
+      </view>
+    </view>
+  </view>
+</view>

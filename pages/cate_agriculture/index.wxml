@@ -1,0 +1,42 @@
+<!--pages/cate_agriculture/index.wxml-->
+<view class="container">
+  <!-- 左侧菜单 -->
+  <scroll-view class="left_menu" >
+    <!-- 在此处遍历数据 -->
+    <view class="menu_item">
+    发包
+    </view>
+    <view class="menu_item">
+    承包
+    </view>
+    <view class="menu_item">
+    合同纠纷
+    </view>
+  </scroll-view>
+
+  <!-- 右侧内容 -->
+  <scroll-view class="right_content">
+    <view class="top_nav">
+      <navigator class="content_nav">常见问题</navigator>
+      <navigator class="content_nav">法律法规 </navigator>
+    </view>
+    <view class="law_content">
+      <view class="law_QA">
+        <view class="law_question">
+        1.法律问答法律问答法律问答法律问答?
+        </view>
+        <view class="law_answer">
+        答：法律问答法律问答法律问答法律问答。
+        </view>
+      </view>
+      <view class="law_QA">
+        <view class="law_question">
+        2.法律问答法律问答法律问答法律问答?
+        </view>
+        <view class="law_answer">
+        答：法律问答法律问答法律问答法律问答。
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

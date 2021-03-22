@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<!-- <view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view> -->
+<!-- <view class="search_input">
+  <navigator url="/pages/search/index">
+    请输入你想咨询的法律问题
+  </navigator>
+</view> -->
+<SearchInput></SearchInput>
+<view class="index_category">
+<!--搜索栏开始-->
+  <navigator url="/pages/cate_autonomy/index">村民自治与村务管理</navigator>
+  <navigator url="/pages/cate_agriculture/index">农业承包</navigator>
+  <navigator url="/pages/cate_land/index">土地管理</navigator>
+  <navigator url="/pages/cate_dispute/index">劳资纠纷</navigator>
+  <navigator url="/pages/cate_poverty/index">聚焦扶贫政策</navigator>
+</view>

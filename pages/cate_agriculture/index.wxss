@@ -1,0 +1,2 @@
+/* pages/cate_agriculture/index.wxss */
+@import "/style/cate_double_column.wxss";

@@ -1,0 +1,36 @@
+page{
+  height: 100%;
+}
+.single_container{
+  height: 100vh;
+}
+.top_nav{
+  margin: 20rpx;
+  padding: 7rpx;
+}
+.content_nav{
+  display: inline;
+  margin-left: 120rpx;
+  margin-right: 40rpx;
+  padding: 5rpx;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(191, 252, 198, 0.877);
+  border-radius: 30rpx;
+}
+.law_QA{
+  height: auto;
+  margin: 50rpx;
+  padding: 30rpx;
+  border-radius: 30rpx;
+  background-color: rgba(222, 254, 226, 0.877);
+}
+.law_question{
+  padding-bottom: 10rpx;
+  margin-bottom: 10rpx;
+  border-bottom: solid;
+  border-width: 1rpx;
+  border-color: gray;
+}

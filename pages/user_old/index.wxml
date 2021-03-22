@@ -1,0 +1,25 @@
+<!--pages/user/index.wxml-->
+<view class="user_info_wrap">
+  <view class="user_img_wrap" 
+    wx:if="{{userinfo.avatarUrl}}" >
+    <image class="user_background" src="{{userinfo.avatarUrl}}"></image>
+    <view class="user_info">
+      <image class="user_icon" src="{{userinfo.avatarUrl}}"></image>
+      <view class="user_name">{{userinfo.nickName}}</view>
+    </view>
+    <image class="logo" src="/material/logo2.jpg"></image>
+    <view class="about">
+    <ul class="l-menu-list">
+    <li class="l-menu-item h-current" id="aboutjd1" bindtap="turnpage1" ><icon class="iconfont icon-recentLook"></icon>最近浏览<icon class="iconfont icon-qianjin" id="qj"/></li>
+    <li class="l-menu-item" id="aboutjd2"  bindtap="turnpage2"><icon class="iconfont icon-question"></icon>我的提问<icon class="iconfont icon-qianjin" id="qj"/></li>
+    <li class="l-menu-item" id="aboutjd3"  bindtap="turnpage3"><icon class="iconfont icon-collect"></icon>我的收藏<icon class="iconfont icon-qianjin" id="qj"/></li>
+    <li class="l-menu-item" id="aboutjd4"  bindtap="turnpage4"><icon class="iconfont icon-about"></icon>关于<icon class="iconfont icon-qianjin" id="qj"/></li>
+  </ul>
+</view>
+  </view>
+
+  <view class="user_btn" wx:else>
+    <navigator url="/pages/login/index">登录</navigator>
+  </view>
+
+</view>

@@ -1,0 +1,37 @@
+/* pages/user/collections/index.wxss */
+
+.law_QA{
+  height: auto;
+  margin: 20rpx;
+  padding: 30rpx;
+  border: 1rpx solid #4db34d;
+  border-radius: 30rpx;
+  background-color: #fff;
+}
+.law_question{
+  font-size: larger;
+  padding-bottom: 10rpx;
+  margin-bottom: 10rpx;
+  border-bottom: solid;
+  border-width: 1rpx;
+  border-color: gray;
+}
+.law_QA .law_answer {
+  /* 设置显示行数为5行，多余部分用省略号表示 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  /* 设置首行缩进和行高 */
+  text-indent: 2em; 
+  line-height: 2em;
+  /* 设置颜色 */
+  color: rgb(82, 81, 81);
+}
+
+.empty_list {
+  margin: 80rpx auto;
+  color: rgb(82, 81, 81);
+  text-align: center;
+}

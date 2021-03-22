@@ -1,0 +1,5 @@
+<view class="search">
+    <navigator url="/pages/search/index" open-type="navigate">
+        <text>请输入你想咨询的法律问题</text>
+    </navigator>
+</view>
