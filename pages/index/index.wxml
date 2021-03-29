@@ -22,7 +22,7 @@
     <!-- 公众号的文字部分 -->
     <view class="oa-text">
       <view class="oa-text-title">公众号“法律乡土”</view>
-      <view class="oa-text-detail">关注公众号，了解更多法律小知识</view>
+      <view class="oa-text-detail">关注公众号了解更多法律小知识</view>
     </view>
   </navigator>
 </view>

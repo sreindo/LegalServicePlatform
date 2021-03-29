@@ -1,0 +1,73 @@
+<!--pages/consult/consult_tudi/index.wxml-->
+<!-- 进度条 -->
+<progress></progress>
+<view class="consult-swiper">
+  <swiper current="{{currentIndex}}">
+    <swiper-item>
+      <view class="consult-swiper-one">
+        <!-- 问题标题 -->
+        <view class="title">
+          1.你是以下哪一方？
+        </view>
+        <!-- 单选选项列表 -->
+        <radio-group bindchange="hasSelected">
+          <radio value="村民">村民</radio>
+          <radio value="城镇居民">城镇居民</radio>
+        </radio-group>
+        <!-- 按钮 -->
+        <view class="btn-area">
+          <button class="btn-pre" bindtap="toPrevious">上一步</button>
+          <button class="btn-confirm" bindtap="toNext">确定</button>
+        </view>
+      </view>
+    </swiper-item>
+    <swiper-item >
+      <view class="consult-swiper-one">
+        <!-- 问题标题 -->
+        <view class="title">
+          2.你与以下哪一方发生了纠纷？
+        </view>
+        <!-- 单选选项列表 -->
+        <radio-group bindchange="hasSelected">
+          <radio>村集体或村委会</radio>
+          <view wx:if="{{isVillager}}">
+            <radio>承包我土地的公司或企业</radio>
+          </view>
+          <view wx:if="{{isCitizen}}">
+            <radio>村民</radio>
+          </view>
+          
+        </radio-group>
+        <!-- 按钮 -->
+        <view class="btn-area">
+          <button class="btn-pre" bindtap="toPrevious">上一步</button>
+          <button class="btn-confirm" bindtap="toNext">确定</button>
+        </view>
+      </view>
+    </swiper-item>
+    <swiper-item >
+      <view class="consult-swiper-one">
+        <!-- 问题标题 -->
+        <view class="title">
+          
+        </view>
+        <!-- 单选选项列表 -->
+        <radio-group bindchange="hasSelected">
+          <radio>村集体或村委会</radio>
+          <view wx:if="{{isVillager}}">
+            <radio>承包我土地的公司或企业</radio>
+          </view>
+          <view wx:if="{{isCitizen}}">
+            <radio>村民</radio>
+          </view>
+          
+        </radio-group>
+        <!-- 按钮 -->
+        <view class="btn-area">
+          <button class="btn-pre" bindtap="toPrevious">上一步</button>
+          <button class="btn-confirm" bindtap="toNext">确定</button>
+        </view>
+      </view>
+    </swiper-item>
+  </swiper>
+</view>
