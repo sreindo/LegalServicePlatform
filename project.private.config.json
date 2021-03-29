@@ -60,6 +60,11 @@
           "pathName": "pages/cate_autonomy/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/consult/index",
+          "pathName": "pages/consult/index",
+          "scene": null
         }
       ]
     }

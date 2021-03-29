@@ -1,0 +1,47 @@
+<!--pages/consult/index.wxml-->
+<!-- 进度条 -->
+<progress></progress>
+<view class="consult-swiper">
+  <swiper>
+    <swiper-item >
+      <view class="consult-swiper-one">
+        <!-- 问题标题 -->
+        <view class="title">
+          你是以下哪一方？
+        </view>
+        <!-- 单选选项列表 -->
+        <radio-group bindchange="">
+          <radio>村民</radio>
+          <radio>城镇居民</radio>
+          <radio>公司或企业</radio>
+          <radio>村集体或村委会</radio>
+        </radio-group>
+        <!-- 按钮 -->
+        <view class="btn-area">
+          <button class="btn-pre">上一步</button>
+          <button class="btn-confirm">确定</button>
+        </view>
+      </view>
+    </swiper-item>
+    <swiper-item >
+      <view class="consult-swiper-one">
+        <!-- 问题标题 -->
+        <view class="title">
+          你与以下哪一方发生了纠纷？
+        </view>
+        <!-- 单选选项列表 -->
+        <radio-group bindchange="">
+          <radio>其他村民</radio>
+          <radio>承包我土地的公司或企业</radio>
+          <radio>村集体或村委会</radio>
+          <radio>没有纠纷</radio>
+        </radio-group>
+        <!-- 按钮 -->
+        <view class="btn-area">
+          <button class="btn-pre">上一步</button>
+          <button class="btn-confirm">确定</button>
+        </view>
+      </view>
+    </swiper-item>
+  </swiper>
+</view>

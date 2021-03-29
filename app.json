@@ -13,7 +13,8 @@
     "pages/user/index",
     "pages/user/collections/index",
     "pages/user/about/index",
-    "pages/login/index"
+    "pages/login/index",
+    "pages/consult/index"
   ],
   "window":{
     "backgroundTextStyle":"light",

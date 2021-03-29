@@ -1,0 +1,51 @@
+/* pages/consult/index.wxss */
+.consult-swiper {
+  height: 100%;
+  widows: 100%;
+  background-color: rgb(243, 243, 243);
+}
+swiper {
+  height: 100%;
+}
+swiper-item {
+  /* height: 100%; */
+}
+.consult-swiper-one {
+  margin: 0;
+  padding: 0;
+  height: 500rpx;
+}
+/* 问题标题 */
+.consult-swiper-one .title{
+  font: 500 40rpx 'MicrosoftYahei';
+  margin: 30rpx auto;
+  text-align: center;
+}
+/* 单选选项列表 */
+.consult-swiper-one radio-group {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+/* 列表项 */
+.consult-swiper-one radio-group radio{
+  font-size: 30rpx;
+  /* height: 100rpx; */
+  padding: 40rpx;
+  border-bottom: 1px solid rgb(211, 211, 211);
+}
+
+/* 按钮 */ 
+.btn-area {
+  margin: 40rpx;
+  display:flex;
+
+}
+.btn-pre, .btn-confirm {
+  background-color: #4db34d;
+  color: white;
+  width: 300rpx;
+  height: 100rpx;
+  font-size: 35rpx;
+  line-height: 100rpx;
+}
