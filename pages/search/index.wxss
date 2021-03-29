@@ -28,7 +28,7 @@ page {
 }
 
 /* 语音搜索 */
-.voiceRecording {
+/* .voiceRecording {
   width: 150rpx;
   height: 150rpx;
   margin: 20rpx auto;
@@ -47,7 +47,7 @@ page {
 .voice-icon {
   width: 50rpx;
   height: 50rpx;
-}
+} */
 
 .search_content {
   margin-top: 30rpx;

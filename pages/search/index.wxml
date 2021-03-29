@@ -11,10 +11,10 @@
   <!-- 
     bindtouchstart="touchStart" bindtouchend="touchEnd" 
     方法可以实现长按按钮功能 -->
-  <view class="voiceRecording" bindtouchstart="touchStart" bindtouchend="touchEnd">
+  <!-- <view class="voiceRecording" bindtouchstart="touchStart" bindtouchend="touchEnd">
     <image class="voice-icon" src="../../icons/voice.png"></image>
     <text>按住说话</text>
-  </view>
+  </view> -->
 
   <!-- 搜索结果 -->
   <view class="search_content">
