@@ -39,7 +39,7 @@
     "minifyWXSS": true
   },
   "compileType": "miniprogram",
-  "libVersion": "2.13.1",
+  "libVersion": "2.16.0",
   "projectname": "LegalServicePlatform",
   "debugOptions": {
     "hidedInDevtools": []
@@ -47,7 +47,7 @@
   "isGameTourist": false,
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {},
-  "appid": "wxb911ef19b39b22c3",
+  "appid": "wx54149f051e03f4ab",
   "condition": {
     "plugin": {
       "list": []
