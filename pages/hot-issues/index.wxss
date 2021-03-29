@@ -1,0 +1,16 @@
+/* pages/hot-issues/index.wxss */
+/**index.wxss**/
+
+.index_category navigator{
+  display: flex;
+  height: 100rpx;
+  font-size: 35rpx;
+  margin: 40rpx;
+  margin-left: 80rpx;
+  margin-right: 80rpx;
+  padding: 20rpx;
+  border-radius: 20rpx;
+  justify-content: center;
+  align-items: center;
+  background-color: honeydew;
+}

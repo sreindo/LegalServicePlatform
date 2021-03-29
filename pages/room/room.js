@@ -1,7 +1,7 @@
 // const app = getApp()
 
-// Page({
-//   data: {
+Page({
+  data: {
 //     avatarUrl: '',
 //     userInfo: null,
 //     logged: false,
@@ -12,7 +12,7 @@
 //     chatRoomGroupName: '聊天室',
 //     onGetUserInfo: null,
 //     getOpenID: null,
-//   },
+  },
 
 //   onLoad:  function(option) {
 //     // 获取用户信息
@@ -74,4 +74,4 @@
 //       path: '/pages/im/room/room',
 //     }
 //   },
-// })
+})

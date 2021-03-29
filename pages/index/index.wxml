@@ -16,12 +16,29 @@
     请输入你想咨询的法律问题
   </navigator>
 </view> -->
-<SearchInput></SearchInput>
-<view class="index_category">
-<!--搜索栏开始-->
-  <navigator url="/pages/cate_autonomy/index">村民自治与村务管理</navigator>
-  <navigator url="/pages/cate_agriculture/index">农业承包</navigator>
-  <navigator url="/pages/cate_land/index">土地管理</navigator>
-  <navigator url="/pages/cate_dispute/index">劳资纠纷</navigator>
-  <navigator url="/pages/cate_poverty/index">聚焦扶贫政策</navigator>
+
+
+<!-- 内容 -->
+<view class="content">
+  <!-- 首页类别 -->
+  <navigator class="index-cate" url="#">
+    <image src="/icons/intelligent-consult.png"></image>
+    <text>智能咨询</text>
+  </navigator>
+  <navigator class="index-cate" url="/pages/hot-issues/index">
+    <image src="/icons/hot-questions.png"></image>
+    <text>热门问题</text>
+  </navigator>
+  <navigator class="index-cate" url="#">
+    <image src="/icons/laws.png"></image>
+    <text>法律法规</text>
+  </navigator>
+  <navigator class="index-cate" url="/pages/room/room">
+    <image src="/icons/message-consult.png"></image>
+    <text>留言咨询</text>
+  </navigator>
+  <navigator class="index-cate" url="#">
+    <image src="/icons/official-account.png"></image>
+    <text>公众号</text>
+  </navigator>
 </view>

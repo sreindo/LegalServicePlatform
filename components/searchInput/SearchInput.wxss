@@ -1,7 +1,7 @@
 .search {
   height: 90rpx;
   padding: 10rpx;
-  background-color: var(--themeColor);
+  background-color: #009500;
 }
 .search navigator {
   height: 100%;

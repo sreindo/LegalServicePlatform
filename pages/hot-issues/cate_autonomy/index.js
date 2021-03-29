@@ -1,5 +1,5 @@
 // pages/cate_autonomy/index.js
-var api = require('../../config/api.js');
+var api = require('../../../config/api.js');
 Page({
 
   /**

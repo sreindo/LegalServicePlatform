@@ -64,6 +64,12 @@
         {
           "name": "pages/consult/index",
           "pathName": "pages/consult/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/room/room",
+          "pathName": "pages/room/room",
           "scene": null
         }
       ]
