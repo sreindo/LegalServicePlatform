@@ -29,7 +29,7 @@ swiper-item {
 }
 /* 列表项 */
 .consult-swiper-one radio-group radio{
-  font-size: 30rpx;
+  font-size: 35rpx;
   /* height: 100rpx; */
   padding: 40rpx;
   border-bottom: 1px solid rgb(211, 211, 211);
@@ -39,7 +39,6 @@ swiper-item {
 .btn-area {
   margin: 40rpx;
   display:flex;
-
 }
 .btn-pre, .btn-confirm {
   background-color: #4db34d;

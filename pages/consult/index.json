@@ -1,3 +1,5 @@
 {
-  "usingComponents": {}
+  "usingComponents": {},
+  "navigationBarTitleText": "智能咨询",
+  "enablePullDownRefresh": false
 }

@@ -1,27 +1,7 @@
-<!--index.wxml-->
-<!-- <view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
-</view> -->
-<!-- <view class="search_input">
-  <navigator url="/pages/search/index">
-    请输入你想咨询的法律问题
-  </navigator>
-</view> -->
-
-
 <!-- 内容 -->
 <view class="content">
   <!-- 首页类别 -->
-  <navigator class="index-cate" url="#">
+  <navigator class="index-cate" url="/pages/consult/index">
     <image src="/icons/intelligent-consult.png"></image>
     <text>智能咨询</text>
   </navigator>

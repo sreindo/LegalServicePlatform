@@ -2,35 +2,35 @@
 <!-- 进度条 -->
 <progress></progress>
 <view class="consult-swiper">
-  <swiper>
-    <swiper-item >
+  <swiper current="{{currentIndex}}">
+    <swiper-item>
       <view class="consult-swiper-one">
         <!-- 问题标题 -->
         <view class="title">
-          你是以下哪一方？
+          1.你是以下哪一方？
         </view>
         <!-- 单选选项列表 -->
-        <radio-group bindchange="">
-          <radio>村民</radio>
-          <radio>城镇居民</radio>
-          <radio>公司或企业</radio>
-          <radio>村集体或村委会</radio>
+        <radio-group bindchange="hasSelected">
+          <radio value="村民">村民</radio>
+          <radio value="城镇居民">城镇居民</radio>
+          <radio value="公司或企业">公司或企业</radio>
+          <radio value="村集体或村委会">村集体或村委会</radio>
         </radio-group>
         <!-- 按钮 -->
         <view class="btn-area">
-          <button class="btn-pre">上一步</button>
-          <button class="btn-confirm">确定</button>
+          <button class="btn-pre" bindtap="toPrevious">上一步</button>
+          <button class="btn-confirm" bindtap="toNext">确定</button>
         </view>
       </view>
     </swiper-item>
-    <swiper-item >
+    <swiper-item item-id="2">
       <view class="consult-swiper-one">
         <!-- 问题标题 -->
         <view class="title">
-          你与以下哪一方发生了纠纷？
+          2.你与以下哪一方发生了纠纷？
         </view>
         <!-- 单选选项列表 -->
-        <radio-group bindchange="">
+        <radio-group bindchange="hasSelected">
           <radio>其他村民</radio>
           <radio>承包我土地的公司或企业</radio>
           <radio>村集体或村委会</radio>
@@ -38,8 +38,8 @@
         </radio-group>
         <!-- 按钮 -->
         <view class="btn-area">
-          <button class="btn-pre">上一步</button>
-          <button class="btn-confirm">确定</button>
+          <button class="btn-pre" bindtap="toPrevious">上一步</button>
+          <button class="btn-confirm" bindtap="toNext">确定</button>
         </view>
       </view>
     </swiper-item>
