@@ -54,3 +54,27 @@
 .content .index-cate text {
   margin-left: 20rpx;
 }
+
+/* 设置公众号的特殊样式 */
+.content .official-account {
+  height: 120rpx;
+}
+.content .official-account image{
+  width: 80rpx;
+  height: 80rpx;
+}
+.content .official-account .oa-text{
+  height: 100rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: normal;
+}
+.content .official-account .oa-text-title {
+  font-size: 35rpx;
+}
+.content .official-account .oa-text-detail {
+  font-size: 22rpx;
+  font-weight: 500;
+  margin-top: 10rpx;
+}
