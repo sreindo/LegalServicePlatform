@@ -34,12 +34,6 @@
       "selectedIconPath": "icons/index_selected.png"
     },
     {
-      "pagePath": "pages/im/room/room",
-      "text": "咨询",
-      "iconPath": "icons/menu.png",
-      "selectedIconPath": "icons/menu_selected.png"
-    },
-    {
       "pagePath": "pages/user/index",
       "text": "我的",
       "iconPath": "icons/my.png",
