@@ -1,2 +1,89 @@
 <!--pages/consult/consult_zhai/index.wxml-->
-<text>pages/consult/consult_zhai/index.wxml</text>
+<view class="consult-swiper">
+  <swiper current="{{currentIndex}}">
+    <!-- 问题1 -->
+    <swiper-item>
+      <view class="consult-swiper-one">
+        <!-- 问题标题 -->
+        <view class="title">
+          1.请问您遇到以下哪个问题？
+        </view>
+        <!-- 单选选项列表 -->
+        <radio-group bindchange="hasSelected1">
+          <radio value="申请">村民如何申请宅基地？</radio>
+          <radio value="买卖">宅基地可以买卖吗？</radio>
+          <radio value="流程">确定宅基地归属的流程是什么？</radio>
+          <radio value="不能确定归属">哪些宅基地不能确定归属？</radio>
+          <radio value="赠与">宅基地可以赠与吗？</radio>
+          <radio value="被收回">宅基地被村集体（或居委会）收回了怎么办？</radio>
+          <radio value="缴税">他人赠予我的房屋，是否需要缴税？</radio>
+        </radio-group>
+        <!-- 按钮 -->
+        <view class="btn-area">
+          <button class="btn-pre" bindtap="toPrevious">上一步</button>
+          <button class="btn-confirm" bindtap="toNext">确定</button>
+        </view>
+      </view>
+    </swiper-item>
+    <!-- 问题2 -->
+    <swiper-item >
+      <view class="consult-swiper-one">
+        <!-- 问题标题 -->
+        <view class="title">
+          2.你是买方还是卖方？
+        </view>
+        <!-- 单选选项列表 -->
+        <radio-group bindchange="hasSelected2">
+          <radio value="buyer">买方</radio>
+          <radio value="seller">卖方</radio>
+        </radio-group>
+        <!-- 按钮 -->
+        <view class="btn-area">
+          <button class="btn-pre" bindtap="toPrevious">上一步</button>
+          <button class="btn-confirm" bindtap="toNext">确定</button>
+        </view>
+      </view>
+    </swiper-item>
+    <!-- 问题3 -->
+    <swiper-item >
+      <view class="consult-swiper-one">
+        <!-- 问题标题 -->
+        <view wx:if="{{isBuyer}}" class="title">
+          3.你和卖方是同一个村的村民吗？
+        </view>
+        <view wx:else class="title">
+          3.你和买方是同一个村的村民吗？
+        </view>
+        <!-- 单选选项列表 -->
+        <radio-group bindchange="hasSelected3">
+          <radio value="yes">是</radio>
+          <radio value="no">不是</radio>
+        </radio-group>
+        <!-- 按钮 -->
+        <view class="btn-area">
+          <button class="btn-pre" bindtap="toPrevious">上一步</button>
+          <button class="btn-confirm" bindtap="toNext">确定</button>
+        </view>
+      </view>
+    </swiper-item>
+    <!-- 问题4 -->
+    <swiper-item >
+      <view class="consult-swiper-one">
+        <!-- 问题标题 -->
+        <view class="title">
+          4.买卖宅基地有没有经过村集体（或村委会）的同意？
+        </view>
+        <!-- 单选选项列表 -->
+        <radio-group bindchange="hasSelected4">
+          <radio value="yes">有</radio>
+          <radio value="no">没有</radio>
+        </radio-group>
+        <!-- 按钮 -->
+        <view class="btn-area">
+          <button class="btn-pre" bindtap="toPrevious">上一步</button>
+          <button class="btn-confirm" bindtap="toNext">确定</button>
+        </view>
+      </view>
+    </swiper-item>
+  </swiper>
+</view>

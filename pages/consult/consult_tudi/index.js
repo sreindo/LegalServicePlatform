@@ -102,7 +102,7 @@ Page({
   },
   /**
    * 事件：选择第三题
-   * 结果：跳至下一题或跳转至意向书
+   * 结果：跳至下一题或跳转至意见书
    */
   hasSelected3: function (e) {
     let index = this.data.currentIndex;

@@ -5,62 +5,88 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    currentIndex: 0,  // 当前所在滑块的index
+    selectList: [],   // 被选中的选项的数组
+    isSelected: [false],  // 是否选择选项的数组
+    isBuyer: false,
+    isSameVillager: false,
+    isAgree: false
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  hasSelected1: function (e) {
+    // bindchange事件的e.detail.value返回选中选项的值
+    let value = e.detail.value;
+    switch (value) {
+      case '申请':
+        // 跳转至意见书1
+        wx.redirectTo({
+          url: 'url',
+        })
+        break;
+      case '买卖':
+        // 跳转至下一题
+        break;
+      case '流程':
+        // 跳转至意见书8
+        wx.redirectTo({
+          url: 'url',
+        })
+        break;
+      case '不能确定归属':
+        // 跳转至意见书9
+        wx.redirectTo({
+          url: 'url',
+        })
+        break;
+      case '赠与':
+          // 跳转至意见书10
+        wx.redirectTo({
+          url: 'url',
+        })
+        break;
+      case '被收回':
+        // 跳转至下一题
+        wx.redirectTo({
+          url: 'url',
+        })
+        break;
+      case '缴税':
+        // 跳转至意见书13
+        wx.redirectTo({
+          url: 'url',
+        })
+        break;
+      default:
+        break;
+    }
+    
+    let index = this.data.currentIndex;
+    this.data.isSelected[index] = true;  // 不需要传递至视图层不用setData
+    this.setData({
+      currentIndex: this.data.currentIndex + 1,
+      
+    })
   },
-
   /**
-   * 生命周期函数--监听页面初次渲染完成
+   * 事件：返回上一题
    */
-  onReady: function () {
-
+  toPrevious: function () {
+    let index = this.data.currentIndex;
+    if (index > 0) {
+      this.setData({
+        currentIndex: index - 1
+      })
+    }
   },
-
   /**
-   * 生命周期函数--监听页面显示
+   * 事件：跳转至下一题
    */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  toNext: function () {
+    let index = this.data.currentIndex;
+    // 若当前题目已经选择选项，则允许跳转至下一题
+    if (this.data.isSelected[index] === true) {
+      this.setData({
+        currentIndex : this.data.currentIndex + 1
+      })
+    }
   }
 })
