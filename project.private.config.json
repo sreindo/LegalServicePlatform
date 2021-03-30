@@ -20,12 +20,6 @@
           "scene": null
         },
         {
-          "name": "pages/user/index",
-          "pathName": "pages/user/index",
-          "query": "",
-          "scene": null
-        },
-        {
           "name": "pages/index/index",
           "pathName": "pages/index/index",
           "query": "",
@@ -34,12 +28,6 @@
         {
           "name": "pages/lawQA/index",
           "pathName": "pages/lawQA/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/search/index",
-          "pathName": "pages/search/index",
           "query": "",
           "scene": null
         },
@@ -70,6 +58,19 @@
         {
           "name": "pages/room/room",
           "pathName": "pages/room/room",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/intent/intent_tudi/tudi1/index",
+          "pathName": "pages/intent/intent_tudi/tudi1/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/intent/intent_tudi/tudi10/index",
+          "pathName": "pages/intent/intent_tudi/tudi10/index",
+          "query": "",
           "scene": null
         }
       ]

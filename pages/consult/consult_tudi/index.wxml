@@ -3,6 +3,7 @@
 <progress></progress>
 <view class="consult-swiper">
   <swiper current="{{currentIndex}}">
+    <!-- 问题1 -->
     <swiper-item>
       <view class="consult-swiper-one">
         <!-- 问题标题 -->
@@ -10,7 +11,7 @@
           1.你是以下哪一方？
         </view>
         <!-- 单选选项列表 -->
-        <radio-group bindchange="hasSelected">
+        <radio-group bindchange="hasSelected1">
           <radio value="村民">村民</radio>
           <radio value="城镇居民">城镇居民</radio>
         </radio-group>
@@ -21,6 +22,7 @@
         </view>
       </view>
     </swiper-item>
+    <!-- 问题2 -->
     <swiper-item >
       <view class="consult-swiper-one">
         <!-- 问题标题 -->
@@ -28,15 +30,14 @@
           2.你与以下哪一方发生了纠纷？
         </view>
         <!-- 单选选项列表 -->
-        <radio-group bindchange="hasSelected">
-          <radio>村集体或村委会</radio>
+        <radio-group bindchange="hasSelected2">
+          <radio value="村集体">村集体或村委会</radio>
           <view wx:if="{{isVillager}}">
-            <radio>承包我土地的公司或企业</radio>
+            <radio value="公司">承包我土地的公司或企业</radio>
           </view>
           <view wx:if="{{isCitizen}}">
-            <radio>村民</radio>
+            <radio value="村民">村民</radio>
           </view>
-          
         </radio-group>
         <!-- 按钮 -->
         <view class="btn-area">
@@ -45,22 +46,55 @@
         </view>
       </view>
     </swiper-item>
+    <!-- 问题3 -->
+    <swiper-item >
+      <view class="consult-swiper-one">
+        <!-- <view wx:if=""></view> -->
+        <!-- 问题标题 -->
+        <view class="title">
+          3.遇到的问题？
+        </view>
+        <!-- 单选选项列表 -->
+        <radio-group bindchange="hasSelected3">
+          <!-- “村民，与村集体” -->
+          <view wx:if="{{isVillCun}}">
+            <radio value="村集体收回">村集体（或村委会）可以收回我的土地吗？</radio>
+            <radio value="村集体强迫">村集体（或村委会）强迫或者阻碍我将土地承包给别人怎么办？</radio>
+          </view>
+          <!-- “村民，与公司” -->
+          <view wx:if="{{withCompany}}">
+            <radio value="收回土地">什么情形下我可以收回承包给公司或企业的土地？</radio>
+            <radio value="公司不付钱">承包我土地的公司或企业不付钱怎么办？</radio>
+          </view>
+          <!-- “城镇居民，与村民 -->
+          <view wx:if="{{withCunmin}}">
+            <radio value="村民占用">村民将我承包的土地占用了怎么办？</radio>
+            <radio value="村民收回">村民要收回承包给我的土地怎么办？</radio>
+          </view>
+          <!-- “城镇居民，与村集体 -->
+          <view wx:if="{{isCitiCun}}">
+            <radio value="城镇村集体收回">村集体或村委会可以收回我的土地吗?</radio>
+            <radio value="口头约定">我与村集体或村委会关于土地承包的口头约定有效吗？</radio>
+          </view>
+        </radio-group>
+        <!-- 按钮 -->
+        <view class="btn-area">
+          <button class="btn-pre" bindtap="toPrevious">上一步</button>
+          <button class="btn-confirm" bindtap="toNext">确定</button>
+        </view>
+      </view>
+    </swiper-item>
+    <!-- 问题4 -->
     <swiper-item >
       <view class="consult-swiper-one">
         <!-- 问题标题 -->
         <view class="title">
-          
+          4.村集体（或村委会）是因公益事业建设需要而回收土地的吗？
         </view>
         <!-- 单选选项列表 -->
-        <radio-group bindchange="hasSelected">
-          <radio>村集体或村委会</radio>
-          <view wx:if="{{isVillager}}">
-            <radio>承包我土地的公司或企业</radio>
-          </view>
-          <view wx:if="{{isCitizen}}">
-            <radio>村民</radio>
-          </view>
-          
+        <radio-group bindchange="hasSelected4">
+          <radio value="yes">是</radio>
+          <radio value="no">否</radio>
         </radio-group>
         <!-- 按钮 -->
         <view class="btn-area">

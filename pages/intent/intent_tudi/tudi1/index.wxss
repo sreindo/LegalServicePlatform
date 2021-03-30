@@ -1,0 +1,27 @@
+/* pages/intent/intent_tudi/tudi1/index.wxss */
+.wrapper {
+  margin: 10rpx 50rpx;
+}
+.head {
+  padding: 10rpx;
+}
+.title {
+  font-size: x-large;
+}
+
+.container {
+  margin: 50rpx 0;
+  padding: 0;
+}
+
+.container .answer {
+  font-size: 18px;
+  font-weight: 300;
+  text-indent: 2em;
+  padding: 0;
+  line-height: 2em;
+}
+.container .answer .sub-title {
+  font-size: 20px;
+  font-weight: 500;
+}
