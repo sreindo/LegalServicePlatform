@@ -1,0 +1,21 @@
+<!--pages/intent/intent_xiang/xiang1/index.wxml-->
+<view class="wrapper">
+  <!-- 问题标题 -->
+  <view class="head">
+    <view class="banner">
+      <image src="/icons/智能法律意见书banner.png"></image>
+    </view>
+    <text class="info">您好：
+      非常感谢您对我们的信任和支持。以下法律意见是根据您填写的信息，参考了法院裁判文书数据、并结合法律专业工作者的集体智慧生成，供您参考！
+    </text>
+  </view>
+  <view class="container">
+    <view class="answer">
+      <view class="sub-title">
+        法律意见
+      </view>
+      <text>答：根据《中华人民共和国民法典》第二百八十八条、《中华人民共和国民法典》第二百九十一条的规定，如果该路为公共道路或属于你，那么可以要求邻居清除道路上堆放的杂物、拆除在道路上正在修建或已扩建的房屋、填补被挖损的道路等，将道路恢复通行；如果该路属于邻居，邻居可以自由支配是否提供该路通行，但若你必须要利用该路通行，可以与邻居协商清理。
+      </text>
+    </view>
+  </view>
+</view>

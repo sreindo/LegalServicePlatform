@@ -1,2 +1,80 @@
 <!--pages/consult/consult_xaing/index.wxml-->
-<text>pages/consult/consult_xaing/index.wxml</text>
+<view class="consult-swiper">
+  <swiper current="{{currentIndex}}">
+    <!-- 问题1 -->
+    <swiper-item>
+      <view class="consult-swiper-one">
+        <!-- 问题标题 -->
+        <view class="title">
+          1.请问您遇到以下哪个问题？
+        </view>
+        <!-- 单选选项列表 -->
+        <radio-group bindchange="hasSelected1">
+          <radio value="道路">道路被侵占无法通行</radio>
+          <radio value="房屋">房屋建设</radio>
+        </radio-group>
+        <!-- 按钮 -->
+        <view class="btn-area">
+          <button class="btn-pre" bindtap="toPrevious">上一步</button>
+          <button class="btn-confirm" bindtap="toNext">确定</button>
+        </view>
+      </view>
+    </swiper-item>
+
+    <!-- 问题2 -->
+    <swiper-item >
+      <view class="consult-swiper-one">
+        <view class="title">
+          2.你的身份？
+        </view>
+        <!-- 单选选项列表 -->
+        <radio-group bindchange="hasSelected2">
+          <radio value="infringed">被侵权人</radio>
+          <radio value="infringer">侵权人</radio>
+        </radio-group>
+       
+        <!-- 按钮 -->
+        <view class="btn-area">
+          <button class="btn-pre" bindtap="toPrevious">上一步</button>
+          <button class="btn-confirm" bindtap="toNext">确定</button>
+        </view>
+      </view>
+    </swiper-item>
+
+    <!-- 问题3 -->
+    <swiper-item >
+      <view class="consult-swiper-one">
+        <!-- 问题标题 -->
+        <view class="title">
+          3.请问您遇到以下哪个问题？
+        </view>
+        <!-- 被侵权人的选项 -->
+        <view wx:if="{{isInfringed}}">
+          <radio-group bindchange="hasSelected3">
+            <radio value="邻居不借">需要借用邻居房屋院落来修建房屋，邻居不借</radio>
+            <radio value="侵占">邻居修建房屋时侵占了你的宅基地</radio>
+            <radio value="被危害">邻居修建房屋时导致你的房屋存在安全隐患</radio>
+            <radio value="被阻碍">邻居阻碍你修建房屋</radio>
+          </radio-group>
+        </view>
+        <!-- 侵权人的选项 -->
+        <view wx:else>
+          <radio-group bindchange="hasSelected3">
+            <radio value="你不借">邻居需要借用你的房屋院落来修建房屋，你不借</radio>
+            <radio value="被侵占">邻居修建房屋时侵占了你的宅基地</radio>
+            <radio value="危害">你修建房屋时导致邻居的房屋存在安全隐患</radio>
+            <radio value="阻碍">你阻碍邻居修建房屋</radio>
+          </radio-group>
+        </view>
+
+        <!-- 按钮 -->
+        <view class="btn-area">
+          <button class="btn-pre" bindtap="toPrevious">上一步</button>
+          <button class="btn-confirm" bindtap="toNext">确定</button>
+        </view>
+      </view>
+    </swiper-item>
+  
+  </swiper>
+</view>
+

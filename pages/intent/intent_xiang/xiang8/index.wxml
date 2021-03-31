@@ -1,0 +1,27 @@
+<!--pages/intent/intent_xiang/xiang8/index.wxml-->
+<!--pages/intent/intent_xiang/xiang7/index.wxml-->
+<!--pages/intent/intent_xiang/xiang6/index.wxml-->
+<!--pages/intent/intent_xiang/xiang5/index.wxml-->
+<!--pages/intent/intent_xiang/xiang4/index.wxml-->
+<!--pages/intent/intent_xiang/xiang3/index.wxml-->
+<!--pages/intent/intent_xiang/xiang2/index.wxml-->
+<view class="wrapper">
+  <!-- 问题标题 -->
+  <view class="head">
+    <view class="banner">
+      <image src="/icons/智能法律意见书banner.png"></image>
+    </view>
+    <text class="info">您好：
+      非常感谢您对我们的信任和支持。以下法律意见是根据您填写的信息，参考了法院裁判文书数据、并结合法律专业工作者的集体智慧生成，供您参考！
+    </text>
+  </view>
+  <view class="container">
+    <view class="answer">
+      <view class="sub-title">
+        法律意见
+      </view>
+      <text>答：根据《中华人民共和国土地管理法》第二条规定，任何单位和个人都不得侵占依法登记过的土地，而宅基地是依法登记的，因此不可以私自侵占邻居的宅基地。
+      </text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,28 @@
+<!--pages/intent/intent_xiang/xiang9/index.wxml-->
+<!--pages/intent/intent_xiang/xiang8/index.wxml-->
+<!--pages/intent/intent_xiang/xiang7/index.wxml-->
+<!--pages/intent/intent_xiang/xiang6/index.wxml-->
+<!--pages/intent/intent_xiang/xiang5/index.wxml-->
+<!--pages/intent/intent_xiang/xiang4/index.wxml-->
+<!--pages/intent/intent_xiang/xiang3/index.wxml-->
+<!--pages/intent/intent_xiang/xiang2/index.wxml-->
+<view class="wrapper">
+  <!-- 问题标题 -->
+  <view class="head">
+    <view class="banner">
+      <image src="/icons/智能法律意见书banner.png"></image>
+    </view>
+    <text class="info">您好：
+      非常感谢您对我们的信任和支持。以下法律意见是根据您填写的信息，参考了法院裁判文书数据、并结合法律专业工作者的集体智慧生成，供您参考！
+    </text>
+  </view>
+  <view class="container">
+    <view class="answer">
+      <view class="sub-title">
+        法律意见
+      </view>
+      <text>答：根据《中华人民共和国民法典》第二百九十五条规定，你在修建房屋时危及到邻居的房屋安全和正常使用，应当根据情况，消除危险。因此邻居可以要求你尽快停止修建行为，并及时采取房屋保护措施，避免损坏邻居的房屋。
+      </text>
+    </view>
+  </view>
+</view>
