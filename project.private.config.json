@@ -32,8 +32,8 @@
           "scene": null
         },
         {
-          "name": "pages/user/collections/index",
-          "pathName": "pages/user/collections/index",
+          "name": "pages/consult/consult_zhai/index",
+          "pathName": "pages/consult/consult_zhai/index",
           "query": "",
           "scene": null
         },
@@ -62,8 +62,8 @@
           "scene": null
         },
         {
-          "name": "pages/consult/consult_zhai/index",
-          "pathName": "pages/consult/consult_zhai/index",
+          "name": "pages/consult/consult_zheng/index",
+          "pathName": "pages/consult/consult_zheng/index",
           "query": "",
           "scene": null
         }

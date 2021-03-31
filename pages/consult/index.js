@@ -6,7 +6,6 @@ Page({
    */
   data: {
     currentIndex: 0,  // 当前所在滑块的index
-    selectList: [],   // 被选中的选项的数组
     isSelected: [false]  // 是否选择选项的数组
   },
 

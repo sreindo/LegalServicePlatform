@@ -1,0 +1,21 @@
+<!--pages/intent/intent_zheng/zheng1/index.wxml-->
+<view class="wrapper">
+  <!-- 问题标题 -->
+  <view class="head">
+    <view class="banner">
+      <image src="/icons/智能法律意见书banner.png"></image>
+    </view>
+    <text class="info">您好：
+      非常感谢您对我们的信任和支持。以下法律意见是根据您填写的信息，参考了法院裁判文书数据、并结合法律专业工作者的集体智慧生成，供您参考！
+    </text>
+  </view>
+  <view class="container">
+    <view class="answer">
+      <view class="sub-title">
+        土地被征收后能否得到补偿?
+      </view>
+      <text>答：无权获得征地补偿。
+      </text>
+    </view>
+  </view>
+</view>

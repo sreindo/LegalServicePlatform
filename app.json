@@ -38,6 +38,12 @@
     "pages/intent/intent_zhai/zhai12/index",
     "pages/intent/intent_zhai/zhai13/index",
     "pages/intent/intent_zhai/zhai14/index",
+    "pages/intent/intent_zheng/zheng1/index",
+    "pages/intent/intent_zheng/zheng2/index",
+    "pages/intent/intent_zheng/zheng3/index",
+    "pages/intent/intent_zheng/zheng4/index",
+    "pages/intent/intent_zheng/zheng5/index",
+    
     "pages/hot-issues/index",
     "pages/hot-issues/cate_poverty/index",
     "pages/hot-issues/cate_dispute/index",

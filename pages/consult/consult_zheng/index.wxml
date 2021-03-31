@@ -1,2 +1,212 @@
 <!--pages/consult/consult_zheng/index.wxml-->
-<text>pages/consult/consult_zheng/index.wxml</text>
+<view class="consult-swiper">
+  <swiper current="{{currentIndex}}">
+    <!-- 问题1 -->
+    <swiper-item>
+      <view class="consult-swiper-one">
+        <!-- 问题标题 -->
+        <view class="title">
+          1.被征收的土地上是否有房屋?
+        </view>
+        <!-- 单选选项列表 -->
+        <radio-group bindchange="hasSelected1">
+          <radio value="yes">有</radio>
+          <radio value="no">没有</radio>
+        </radio-group>
+        <!-- 按钮 -->
+        <view class="btn-area">
+          <button class="btn-pre" bindtap="toPrevious">上一步</button>
+          <button class="btn-confirm" bindtap="toNext">确定</button>
+        </view>
+      </view>
+    </swiper-item>
+
+    <!-- 问题2 -->
+    <swiper-item>
+      <view class="consult-swiper-one">
+        <!-- 问题2.1土地上有房屋 -->
+        <view wx:if="{{havaHouse}}">
+          <view class="title">
+            2.房屋的取得方式
+          </view>
+          <!-- 单选选项列表 -->
+          <radio-group bindchange="hasSelected2">
+            <radio value="买卖">买卖</radio>
+            <radio value="继承">继承</radio>
+            <radio value="他人赠与">他人赠与</radio>
+            <radio value="自己建造">自己建造</radio>
+          </radio-group>
+        </view>
+        <!-- 转到第7题 问题2.2土地上没有房屋 -->
+        <!-- <view wx:else>
+          <view class="title">
+            2.是否已转为城镇户口
+          </view>
+          <radio-group bindchange="hasSelected2_2">
+            <radio value="yes">是</radio>
+            <radio value="no">否</radio>
+          </radio-group>
+        </view> -->
+        <!-- 按钮 -->
+        <view class="btn-area">
+          <button class="btn-pre" bindtap="toPrevious">上一步</button>
+          <button class="btn-confirm" bindtap="toNext">确定</button>
+        </view>
+      </view>
+    </swiper-item>
+
+    <!-- 问题3 -->
+    <swiper-item>
+      <view class="consult-swiper-one">
+        <!-- 问题标题 -->
+        <view class="title">
+          3.建造该房屋是否经过县政府的批准?
+        </view>
+        <!-- 单选选项列表 -->
+        <radio-group bindchange="hasSelected3">
+          <!-- 经过批准跳转至最后一个那个共性问题 -->
+          <radio value="经过批准">是</radio>
+          <!-- 否就跳转至下一个 -->
+          <radio value="没经过批准">否</radio>
+        </radio-group>
+        <!-- 按钮 -->
+        <view class="btn-area">
+          <button class="btn-pre" bindtap="toPrevious">上一步</button>
+          <button class="btn-confirm" bindtap="toNext">确定</button>
+        </view>
+      </view>
+    </swiper-item>
+
+    <!-- 问题4 -->
+    <swiper-item>
+      <view class="consult-swiper-one">
+        <!-- 问题标题 -->
+        <view class="title">
+          4.是否已转为城镇户口?
+        </view>
+        <!-- 单选选项列表 -->
+        <radio-group bindchange="hasSelected4">
+          <radio value="yes">是</radio>
+          <radio value="no">否</radio>
+        </radio-group>
+        <!-- 按钮 -->
+        <view class="btn-area">
+          <button class="btn-pre" bindtap="toPrevious">上一步</button>
+          <button class="btn-confirm" bindtap="toNext">确定</button>
+        </view>
+      </view>
+    </swiper-item>
+
+    <!-- 问题5 -->
+    <swiper-item>
+      <view class="consult-swiper-one">
+        <!-- 问题5.1 未经批准且转为城镇户口 -->
+        <view wx:if="{{isUnapproveTransferred }}">
+          <view class="title">
+            5.承包的土地被征收前是否已交回村集体？
+          </view>
+          <!-- 单选选项列表 -->
+          <radio-group bindchange="hasSelected5_1">
+            <radio value="yes">是</radio>
+            <radio value="no">否</radio>
+          </radio-group>
+        </view>
+        <!-- 问题5.2 未经批准且没有转户口 -->
+        <!-- <view wx:if="{{isUnapproveTransferred }}">
+          <view class="title">
+            5.是否将被征收土地承包给了别人？
+          </view>
+          <radio-group bindchange="hasSelected5_2">
+            <radio value="yes">是</radio>
+            <radio value="no">否</radio>
+          </radio-group>
+        </view> -->
+
+        <!-- 按钮 -->
+        <view class="btn-area">
+          <button class="btn-pre" bindtap="toPrevious">上一步</button>
+          <button class="btn-confirm" bindtap="toNext">确定</button>
+        </view>
+      </view>
+    </swiper-item>
+
+    <!-- 问题6 -->
+    <swiper-item>
+      <view class="consult-swiper-one">
+        <view class="title">
+          6.是否将被征收土地承包给了别人？
+        </view>
+        <!-- 单选选项列表 -->
+        <radio-group bindchange="hasSelected6">
+          <radio value="yes">是</radio>
+          <radio value="no">否</radio>
+        </radio-group>
+
+        <!-- 按钮 -->
+        <view class="btn-area">
+          <button class="btn-pre" bindtap="toPrevious">上一步</button>
+          <button class="btn-confirm" bindtap="toNext">确定</button>
+        </view>
+      </view>
+    </swiper-item>
+
+    <!-- 问题7 这是一个共性的问题，放在最后一张swiper -->
+    <swiper-item>
+      <view class="consult-swiper-one">
+        <view class="title">
+          是否已转为城镇户口？
+        </view>
+        <!-- 单选选项列表 -->
+        <radio-group bindchange="hasSelected7">
+          <radio value="yes">是</radio>
+          <radio value="no">不是</radio>
+        </radio-group>
+        <!-- 按钮 -->
+        <view class="btn-area">
+          <button class="btn-pre" bindtap="toPrevious">上一步</button>
+          <button class="btn-confirm" bindtap="toNext">确定</button>
+        </view>
+      </view>
+    </swiper-item>
+
+    <!-- 问题8  -->
+    <swiper-item>
+      <view class="consult-swiper-one">
+        <!-- 8.1 普通且已转城镇户口 -->
+        <view wx:if="{{isTransferred}}">
+          <view class="title">
+            承包的土地被征收前是否已交回村集体?
+          </view>
+          <radio-group bindchange="hasSelected8">
+            <radio value="yes">是</radio>
+            <radio value="no">不是</radio>
+          </radio-group>
+        </view>
+        
+        <!-- 按钮 -->
+        <view class="btn-area">
+          <button class="btn-pre" bindtap="toPrevious">上一步</button>
+          <button class="btn-confirm" bindtap="toNext">确定</button>
+        </view>
+      </view>
+    </swiper-item>
+
+    <!-- 问题9 是否将被征收土地承包给了别人  -->
+    <swiper-item>
+      <view class="consult-swiper-one">
+        <view class="title">
+          是否将被征收土地承包给了别人?
+        </view>
+        <radio-group bindchange="hasSelected9">
+          <radio value="yes">是</radio>
+          <radio value="no">不是</radio>
+        </radio-group>
+        <!-- 按钮 -->
+        <view class="btn-area">
+          <button class="btn-pre" bindtap="toPrevious">上一步</button>
+          <button class="btn-confirm" bindtap="toNext">确定</button>
+        </view>
+      </view>
+    </swiper-item>
+  </swiper>
+</view>

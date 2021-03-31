@@ -6,7 +6,6 @@ Page({
    */
   data: {
     currentIndex: 0,  // 当前所在滑块的index
-    selectList: [],   // 被选中的选项的数组
     isSelected: [false],  // 是否选择选项的数组
     isBuyer: false,   // 是否为买家，是为买家，否则为卖家
     isDeal: false     // 是否是买卖，是选择买卖问题，否则选择宅基地被收回问题

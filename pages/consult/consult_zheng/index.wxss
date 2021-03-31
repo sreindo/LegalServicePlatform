@@ -1,1 +1,2 @@
 /* pages/consult/consult_zheng/index.wxss */
+@import "../index.wxss"
