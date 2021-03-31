@@ -1,11 +1,11 @@
 <!--pages/consult/index.wxml-->
 
 
-<view class="container">
+
   <view class="category">
     <navigator url="./consult_zhai/index">宅基地问题</navigator>
     <navigator url="./consult_tudi/index">土地承包及流转问题</navigator>
     <navigator url="./consult_zheng/index">征地补偿问题</navigator>
-    <navigator url="./consult_xiang/index">乡村邻里纠纷</navigator>
+    <navigator url="./consult_xiang/index">乡村邻里纠纷问题</navigator>
   </view>
-</view>
+

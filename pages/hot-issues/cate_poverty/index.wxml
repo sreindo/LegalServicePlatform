@@ -1,26 +1,21 @@
 <!--pages/cate_poverty/index.wxml-->
-<view class=".single_container">
-  <scroll-view>
-    <view class="top_nav">
-      <navigator class="content_nav">常见问题</navigator>
-      <navigator class="content_nav">法律法规 </navigator>
-    </view>
-    <view class="law_content">
-      <view class="law_QA">
-        <view class="law_question">
+<!-- 聚焦扶贫政策 -->
+<view class="container">
+  <scroll-view class="list" scroll-y>
+    <view class="law_QA">
+      <view class="law_question">
         1.法律问答法律问答法律问答法律问答?
-        </view>
-        <view class="law_answer">
-        答：法律问答法律问答法律问答法律问答。
-        </view>
       </view>
-      <view class="law_QA">
-        <view class="law_question">
-        2.法律问答法律问答法律问答法律问答?
-        </view>
-        <view class="law_answer">
+      <view class="law_answer">
         答：法律问答法律问答法律问答法律问答。
-        </view>
+      </view>
+    </view>
+    <view class="law_QA">
+      <view class="law_question">
+        2.法律问答法律问答法律问答法律问答?
+      </view>
+      <view class="law_answer">
+        答：法律问答法律问答法律问答法律问答。
       </view>
     </view>
   </scroll-view>

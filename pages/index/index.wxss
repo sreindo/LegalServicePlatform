@@ -1,19 +1,5 @@
 /**index.wxss**/
 
-/* .search_input{
-  height: 90rpx;
-  padding: 10rpx;
-  background-color: var(--themeColor);
-} */
-/* .search_input navigator{
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 15rpx;
-  background-color: white;
-} */
-
 .index_category navigator{
   display: flex;
   height: 100rpx;
@@ -37,8 +23,8 @@
 .content .index-cate {
   width: 500rpx;
   height: 100rpx;
-  margin: 50rpx auto;
-  background: linear-gradient(to right, #90f023, rgb(23, 146, 23));
+  margin: 70rpx auto;
+  background: linear-gradient(to right, #88d432, rgb(23, 146, 23));
   display: flex;
   align-items: center;
   color: white;

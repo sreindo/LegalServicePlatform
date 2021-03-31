@@ -1,14 +1,11 @@
 /* pages/hot-issues/index.wxss */
-/**index.wxss**/
+/* 热门问题 */
 
-.index_category navigator{
+.category navigator{
   display: flex;
   height: 100rpx;
-  font-size: 35rpx;
-  margin: 40rpx;
-  margin-left: 80rpx;
-  margin-right: 80rpx;
-  padding: 20rpx;
+  font-size: 37rpx;
+  margin: 80rpx 100rpx;
   border-radius: 20rpx;
   justify-content: center;
   align-items: center;

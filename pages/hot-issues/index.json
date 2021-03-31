@@ -2,5 +2,5 @@
   "usingComponents": {
     "SearchInput":"../../components/searchInput/SearchInput"
   },
-  "navigationBarTitleText": "热点问题"
+  "navigationBarTitleText": "热门问题"
 }

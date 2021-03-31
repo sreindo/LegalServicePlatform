@@ -1,4 +1,4 @@
-page{
+/* page{
   height: 100%;
 }
 .container {
@@ -55,4 +55,4 @@ page{
   border-bottom: solid;
   border-width: 1rpx;
   border-color: gray;
-}
+} */

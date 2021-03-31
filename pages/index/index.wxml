@@ -9,7 +9,7 @@
     <image src="/icons/hot-questions.png"></image>
     <text>热门问题</text>
   </navigator>
-  <navigator class="index-cate" url="#">
+  <navigator class="index-cate" url="/pages/hot-issues/cate_autonomy/index">
     <image src="/icons/laws.png"></image>
     <text>法律法规</text>
   </navigator>
@@ -17,12 +17,12 @@
     <image src="/icons/message-consult.png"></image>
     <text>留言咨询</text>
   </navigator>
-  <navigator class="index-cate official-account" url="#">
+  <view class="index-cate official-account" >
     <image src="/icons/offaccount.png"></image>
     <!-- 公众号的文字部分 -->
     <view class="oa-text">
       <view class="oa-text-title">公众号“法律乡土”</view>
       <view class="oa-text-detail">关注公众号了解更多法律小知识</view>
     </view>
-  </navigator>
+  </view>
 </view>

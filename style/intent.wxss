@@ -41,6 +41,5 @@
   line-height: 80rpx;
 }
 .container .answer text {
-  /* text-indent: 2em; */
   margin-bottom: 40rpx;
 }

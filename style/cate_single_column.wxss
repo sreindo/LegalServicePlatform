@@ -1,36 +1,37 @@
-page{
+.container {
+  margin: 30rpx 10rpx;
+  padding: 0;
+}
+.list {
   height: 100%;
 }
-.single_container{
-  height: 100vh;
-}
-.top_nav{
-  margin: 20rpx;
-  padding: 7rpx;
-}
-.content_nav{
-  display: inline;
-  margin-left: 120rpx;
-  margin-right: 40rpx;
-  padding: 5rpx;
-  padding-left: 20rpx;
-  padding-right: 20rpx;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(191, 252, 198, 0.877);
-  border-radius: 30rpx;
-}
-.law_QA{
+.list .law_QA{
   height: auto;
-  margin: 50rpx;
+  margin: 30rpx;
   padding: 30rpx;
+  border: 1rpx solid #4db34d;
   border-radius: 30rpx;
-  background-color: rgba(222, 254, 226, 0.877);
+  background-color: #fff;
 }
-.law_question{
+.list .law_question{
+  font-size: larger;
   padding-bottom: 10rpx;
   margin-bottom: 10rpx;
   border-bottom: solid;
   border-width: 1rpx;
   border-color: gray;
+}
+.list .law_QA .law_answer {
+  /* 设置显示行数为5行，多余部分用省略号表示 */
+  
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp:4;
+  -webkit-box-orient:vertical;
+  /* 设置首行缩进和行高 */
+  text-indent: 2em; 
+  line-height: 2em;
+  /* 设置颜色 */
+  color: rgb(82, 81, 81);
 }
