@@ -62,14 +62,8 @@
           "scene": null
         },
         {
-          "name": "pages/intent/intent_tudi/tudi1/index",
-          "pathName": "pages/intent/intent_tudi/tudi1/index",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "pages/intent/intent_tudi/tudi10/index",
-          "pathName": "pages/intent/intent_tudi/tudi10/index",
+          "name": "pages/consult/consult_zhai/index",
+          "pathName": "pages/consult/consult_zhai/index",
           "query": "",
           "scene": null
         }

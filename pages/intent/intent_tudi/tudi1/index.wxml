@@ -2,9 +2,12 @@
 <view class="wrapper">
   <!-- 问题标题 -->
   <view class="head">
-    <view class="title">
-      意见书1
+    <view class="banner">
+      <image src="/icons/智能法律意见书banner.png"></image>
     </view>
+    <text class="info">您好：
+      非常感谢您对我们的信任和支持。以下法律意见是根据您填写的信息，参考了法院裁判文书数据、并结合法律专业工作者的集体智慧生成，供您参考！
+    </text>
   </view>
   <view class="container">
     <view class="answer">
@@ -31,8 +34,6 @@
       1．你和村集体（或村委会）存在土地承包的证据（《土地承包合同》、《土地承包经营证书》、证人证言等）；
       2．你在该土地上投入了人力、物力和资金的证据（请人劳作的工资支付记录、购买肥料的单据、建设施工的费用单据等）。
       </view>
-        
-     
     </view>
   </view>
 </view>

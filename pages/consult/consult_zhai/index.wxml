@@ -28,15 +28,28 @@
     <!-- 问题2 -->
     <swiper-item >
       <view class="consult-swiper-one">
-        <!-- 问题标题 -->
-        <view class="title">
-          2.你是买方还是卖方？
+        <!-- 问题2.1买卖问题 -->
+        <view wx:if="{{isDeal}}">
+          <view class="title">
+            2.你是买方还是卖方？
+          </view>
+          <!-- 单选选项列表 -->
+          <radio-group bindchange="hasSelected2_1">
+            <radio value="buyer">买方</radio>
+            <radio value="seller">卖方</radio>
+          </radio-group>
         </view>
-        <!-- 单选选项列表 -->
-        <radio-group bindchange="hasSelected2">
-          <radio value="buyer">买方</radio>
-          <radio value="seller">卖方</radio>
-        </radio-group>
+        <!-- 问题2.2宅基地被收回问题 -->
+        <view wx:else >
+          <view class="title">
+            2.宅基地因以下什么原因被收回？
+          </view>
+          <radio-group bindchange="hasSelected2_2">
+            <radio value="继承">房屋所有人去世，我作为继承人且是城镇户口。</radio>
+            <radio value="搬迁">因政策进行异地搬迁，我已有新房居住</radio>
+            <radio value="征用">为乡（镇）村公共设施和公益事业建设，被政府征用</radio>
+          </radio-group>
+        </view>
         <!-- 按钮 -->
         <view class="btn-area">
           <button class="btn-pre" bindtap="toPrevious">上一步</button>
