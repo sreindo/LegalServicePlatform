@@ -64,7 +64,7 @@
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#009500",
-    "navigationBarTitleText": "“法润乡土”服务平台",
+    "navigationBarTitleText": "法润乡土服务平台",
     "navigationBarTextStyle":"black",
     "enablePullDownRefresh": true
   },
