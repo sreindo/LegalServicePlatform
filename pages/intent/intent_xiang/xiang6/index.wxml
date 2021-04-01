@@ -7,7 +7,7 @@
   <!-- 问题标题 -->
   <view class="head">
     <view class="banner">
-      <image src="/icons/智能法律意见书banner.png"></image>
+      <image src="/icons/law_opnion_letter.png"></image>
     </view>
     <text class="info">您好：
       非常感谢您对我们的信任和支持。以下法律意见是根据您填写的信息，参考了法院裁判文书数据、并结合法律专业工作者的集体智慧生成，供您参考！
